@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.parent-container {
+    /* border: 1px solid darkgoldenrod; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btn {
+    border: 1px solid darkgoldenrod;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#green {
+    background-color: green;
+}
+#yellow {
+    background-color: yellow;
+}
