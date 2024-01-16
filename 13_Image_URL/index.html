@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="my-body">
+    <div class="main-container">
+        <h1>Image URL</h1>
+        <div class="sidebar">
+            <input type="text" id="image-url" placeholder="paste your link  ">
+            <button class="submit" onclick="myFunction()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Fetcher</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 400px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Fetcher</h1>
+    <label for="urlInput">Enter Image URL:</label>
+    <input type="text" id="urlInput">
+    <button onclick="fetchAndDisplayImage()">Fetch Image</button>
+
+    <div id="imageContainer"></div>
+
+    <script>
+        function fetchAndDisplayImage() {
+            const urlInput = document.getElementById('urlInput').value;
+            const imageContainer = document.getElementById('imageContainer');
+
+            // Clear previous image
+            imageContainer.innerHTML = '';
+
+            // Create an image element
+            const img = document.createElement('img');
+
+            // Set the source of the image to the entered URL
+            img.src = urlInput;
+
+            // Append the image to the container
+            imageContainer.appendChild(img);
+        }
+    </script>
+
+</body>
+</html> -->
