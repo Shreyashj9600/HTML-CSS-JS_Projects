@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Calculator</title>
+  <style>
+    body{
+        background-color: #232323;
+        color: #fff;
+    }
+    h1{
+        text-align: center;
+        margin-top: 250px;
+    }
+    .calcBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 150px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        color: #232323;
+        border-radius: 10px;
+        margin-left: 600px;
+        font-size: 19px;
+    }
+    .calcBtn:hover{
+        background-color: rgb(62, 62, 133);
+        color: #fff;
+        transition: 1s;
+    }
+
+  </style>
+  <script>
+    function calculateResult() {
+      // Get student name and marks for three subjects
+      var studentName = prompt("Enter student name:");
+      var subject1Marks = parseFloat(prompt("Enter marks for subject 1:"));
+      var subject2Marks = parseFloat(prompt("Enter marks for subject 2:"));
+      var subject3Marks = parseFloat(prompt("Enter marks for subject 3:"));
+
+      // Validate input
+      if (isNaN(subject1Marks) ||    isNaN(subject2Marks) || isNaN(subject3Marks)) {
+        alert("Please enter valid numeric marks.");
+        return;
+      }
+
+      // Calculate total and average
+      var totalMarks = subject1Marks + subject2Marks + subject3Marks;
+      var averageMarks = totalMarks / 3;
+
+      // Determine the result (assuming passing grade is 40)
+      var result = averageMarks >= 40 ? "Pass" : "Fail";
+
+      // Display the result using dialog box
+      var message = "Student Name: " + studentName + "\n";
+      message += "Total Marks: " + totalMarks + "\n";
+      message += "Average Marks: " + averageMarks.toFixed(2) + "\n";
+      message += "Result: " + result;
+
+      alert(message);
+    }
+  </script>
+</head>
+<body>
+
+<h1>Student Result Calculator</h1>
+<div class="calcBtn" onclick="calculateResult()" >Calculate Result</div>
+
+</body>
+</html>
