@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eeee;
+}
+
+/* nav section  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeee;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px rgb(185, 165, 165);
+}
+
+nav .logo {
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+ul {
+    margin-right: 45px;
+    margin-top: 7px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a {
+    margin-inline: 22px;
+    font-size: 22px;
+}
+
+ul li i {
+    font-size: 22px;
+}
+
+ul li #home {
+    color: rgb(2, 173, 173);
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+ul li i:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+/* main page section */
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .mainTaxt {
+    margin-top: 144px;
+}
+
+.mainTaxt h1 {
+    font-size: 64px;
+}
+
+.mainTaxt .top {
+    color: rgb(12, 175, 175);
+}
+
+.mainTaxt p {
+    margin-top: 12px;
+}
+
+.mainTaxt button {
+    width: 145px;
+    height: 40px;
+    background-color: rgb(4, 140, 140);
+    border: none;
+    font-size: 19px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.mainTaxt button:hover {
+    border: 2px solid rgb(3, 128, 128);
+    background-color: transparent;
+    color: rgb(2, 121, 121);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+/* cards section */
+.head h1 {
+    text-align: center;
+    padding: 33px;
+    margin-top: 22px;
+}
+
+.head span {
+    color: rgb(2, 164, 164);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card .crd {
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    margin-inline: 11px;
+    border-radius: 10px;
+}
+
+.crd img {
+    width: 95%;
+    height: 70%;
+    padding: 22px;
+    border-radius: 32px;
+}
+
+.crdText {
+    margin-left: 29px;
+    padding: 10px;
+}
+
+.crdText i {
+    color: rgba(233, 240, 16, 0.828);
+    padding-top: 9px;
+}
+
+.crdText button {
+    width: 110px;
+    height: 33px;
+    border: none;
+    background-color: rgb(5, 141, 141);
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    margin-inline: 22px;
+    border-radius: 11px;
+
+}
+
+.blog:hover {
+    transition: 0.6s ease;
+    width: 520px;
+    height: 320px;
+}
+
+.blog img {
+    padding: 22px;
+    width: 85%;
+}
+
+.blogText {
+    padding: 12px;
+    margin-top: 33px;
+}
+
+.blogText a {
+    width: 130px;
+    padding: 4px;
+    height: 18px;
+    background-color: rgb(4, 136, 136);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    top: 33px;
+}
+
+.letter {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(2, 2, 66);
+    padding: 43px;
+}
+
+.inp {
+    display: flex;
+}
+
+.inp input {
+    width: 330px;
+    height: 33px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 9px 0 0 9px;
+
+}
+
+.inp button {
+    width: 100px;
+    height: 33px;
+    background-color: rgb(2, 173, 173);
+    color: white;
+    border: none;
+    border-radius: 0 9px 9px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inp ::placeholder {
+    padding-left: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 53px;
+}
+
+.footer .footerText {
+    margin-inline: 85px;
+}
+
+.footerText p {
+    margin-top: 11px;
+}
+
+/* about */
+.about {
+    display: none;
+}
+
+.aboutus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    background-color: #fff;
+    padding: 33px;
+    margin-left: 25%;
+    margin-top: 7%;
+}
+
+.me img {
+    width: 54%;
+}
+
+/* /contact */
+
+.contact {
+    display: none;
+}
+
+.contactus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-top: 5%;
+    background-color: #fff;
+    margin-left: 10%;
+
+}
+
+.contactMe img {
+    width: 55%;
+}
+
+.contactText {
+    padding: 22px;
+    width: 600px;
+}
+
+.contactText p {
+    margin-top: 12px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 5%;
+    padding: 22px;
+}
+
+.form input {
+    width: 300px;
+    padding: 5px;
+    height: 27px;
+    margin-top: 11px;
+}
+
+.form button {
+    width: 300px;
+    height: 36px;
+    background-color: rgb(2, 54, 54);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+/* cart */
+
+.cart {
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+
+.cartText {
+    padding: 22px;
+    margin-top: 22px;
+}
+
+.cartText p {
+    margin-top: 12px;
+}
+
+.cartText h2 {
+    margin-top: 11px;
+}
+
+.cartText .btn button {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cartText .btn button:hover {
+    background-color: rgb(221, 98, 4);
+}
+
+.cartText .back {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(4, 81, 81);
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    margin-top: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cartText .back:hover {
+    background-color: rgb(3, 49, 49);
+    transition: 0.5s ease-in-out
+}
